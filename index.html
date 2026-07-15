@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yunnith - Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body data-theme="light" class="home">
+
+<header>
+  <a href="index.html">
+  <img src="assets/img/yunnith_logo.png" alt="Yunnith logo" class="logo">
+  </a>
+
+  <nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main>
+
+  <!-- =========================
+       INTRO SECTION
+  ========================= -->
+  <section class="intro-wrapper">
+
+    <div class="intro">
+      <h1>Hi, I'm <span>Yunnith</span>!</h1>
+      <p>
+        Graphic designer focused on UX/UI design.<br>
+        Background in illustration and front-end development.
+      </p>
+      <p class="location">Currently working from Europe 🌍</p>
+	  
+	<div class="intro-actions">
+		<a href="projects.html" class="btn-primary">View Projects</a>
+	</div>
+    </div>
+
+    <!-- =========================
+         PORTRAIT WITH SVG WINDOWS
+    ========================= -->
+    <div class="portrait">
+
+      <!--
+        SVG is larger than the photo.
+        Illustration is clipped to photo shape.
+        Photo is masked to create windows.
+      -->
+      <svg
+        viewBox="0 0 360 460"
+        class="portrait-svg"
+        aria-hidden="true"
+      >
+
+        <defs>
+          <!-- Rounded photo shape -->
+          <clipPath id="photo-area">
+            <rect
+              x="30"
+              y="30"
+              width="300"
+              height="400"
+              rx="16"
+              ry="16"
+            />
+          </clipPath>
+
+          <!-- Mask that cuts holes in the photo -->
+          <mask
+            id="photo-mask"
+            maskUnits="userSpaceOnUse"
+          >
+            <!-- Photo visible by default -->
+            <rect
+              x="0"
+              y="0"
+              width="360"
+              height="460"
+              fill="white"
+            />
+
+            <!-- Window 1 (hole) -->
+            <rect
+              x="0"
+              y="0"
+              width="180"
+              height="180"
+              fill="black"
+              class="window window1"
+            />
+
+            <!-- Window 2 (hole) -->
+            <rect
+              x="180"
+              y="280"
+              width="180"
+              height="180"
+              fill="black"
+              class="window window2"
+            />
+          </mask>
+        </defs>
+
+        <!-- Illustration (ONLY inside photo area) -->
+	<image
+		href="assets/img/illustration.png"
+		x="15"
+		y="10"
+		width="330"
+		height="450"
+		preserveAspectRatio="xMidYMid slice"
+		clip-path="url(#photo-area)"
+		draggable="false"
+		class="profile-photo" 
+		alt="Profile photo"
+	/>
+
+
+        <!-- Photo with windows cut out -->
+        <image
+          href="assets/img/foto2.png"
+          x="30"
+          y="30"
+          width="300"
+          height="400"
+          preserveAspectRatio="xMidYMid slice"
+          clip-path="url(#photo-area)"
+          mask="url(#photo-mask)"
+		  draggable="false"
+		  class="profile-photo" 
+		  alt="Profile photo"
+        />
+
+        <!-- Visible floating frames -->
+      <!-- Paper border -->
+<rect
+  x="0"
+  y="0"
+  width="180"
+  height="180"
+  rx="0"
+  fill="none"
+  stroke="white"
+  stroke-width="10"
+  class="frame frame1"
+/>
+
+<!-- Thin outline -->
+<rect
+  x="0"
+  y="0"
+  width="180"
+  height="180"
+  rx="0"
+  fill="none"
+  stroke="rgba(0,0,0,0.15)"
+  stroke-width="1"
+  class="frame frame1"
+/>
+
+
+       <rect
+  x="180"
+  y="280"
+  width="180"
+  height="180"
+  rx="0"
+  fill="none"
+  stroke="white"
+  stroke-width="10"
+  class="frame frame2"
+/>
+
+<rect
+  x="180"
+  y="280"
+  width="180"
+  height="180"
+  rx="0"
+  fill="none"
+  stroke="rgba(0,0,0,0.15)"
+  stroke-width="1"
+  class="frame frame2"
+/>
+
+
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- =========================
+       HOME INFO STRIP
+  ========================= -->
+  <section class="home-info">
+    <div>
+      <strong>Focus</strong>
+      <p>UX/UI Design • Front-End Development • Digital Illustration • Visual Storytelling</p>
+    </div>
+
+    <div>
+      <strong>Tools</strong>
+      <p>Figma • Adobe XD • Illustrator • Photoshop • Premiere Pro • After Effects • HTML/CSS • JavaScript</p>
+    </div>
+
+    <div>
+      <strong>Open to</strong>
+      <p>Full-time opportunities • freelance projects • collaborations</p>
+    </div>
+
+    <div>
+      <strong>Languages</strong>
+      <p>
+        Spanish • Catalan • English • Italian<br>
+        <span class="muted">Basic Norwegian</span>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+ <p>© Yunnith - All rights reserved</p>
+ <p class="muted">Designed & coded by Yunnith</p>
+  <p class="footer-links">
+    <a href="mailto:yunnith@hotmail.com">Email</a> •
+    <a href="https://www.linkedin.com/in/judith-martinez-tovar/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+    <a href="https://github.com/Yunnith" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </p>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+</body>
+</html>

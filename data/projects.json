@@ -1,0 +1,50 @@
+[
+  {
+    "id": "comic-01",
+    "title": "Cómic Corto: Ruido Neon",
+    "year": "2025",
+    "desc": "Cómic corto experimental con narrativa rápida y composición agresiva.",
+    "tags": ["cómic", "narrativa", "neon"],
+    "cover": "assets/img/placeholder-1.png"
+  },
+  {
+    "id": "illus-01",
+    "title": "Serie Ilustración: Retratos Punk",
+    "year": "2024",
+    "desc": "Serie de retratos con contraste fuerte, texturas y energía juvenil.",
+    "tags": ["ilustración", "retrato", "color"],
+    "cover": "assets/img/placeholder-2.png"
+  },
+  {
+    "id": "poster-01",
+    "title": "Poster: Festival Imaginario",
+    "year": "2024",
+    "desc": "Cartel con estética editorial brutalista y tipografía contundente.",
+    "tags": ["poster", "diseño", "tipografía"],
+    "cover": "assets/img/placeholder-3.png"
+  },
+  {
+    "id": "cover-01",
+    "title": "Portada: Novela Gráfica (concept)",
+    "year": "2025",
+    "desc": "Concepto de portada con composición central y símbolos narrativos.",
+    "tags": ["portada", "ilustración", "concept"],
+    "cover": "assets/img/placeholder-4.png"
+  },
+  {
+    "id": "concept-01",
+    "title": "Concept: Personajes",
+    "year": "2023",
+    "desc": "Exploración de personajes con variaciones de silueta y expresividad.",
+    "tags": ["concept", "personajes", "dibujo"],
+    "cover": "assets/img/placeholder-5.png"
+  },
+  {
+    "id": "fanart-01",
+    "title": "Fanart: Universo X",
+    "year": "2025",
+    "desc": "Fanart con reinterpretación de color, luz y diseño de vestuario.",
+    "tags": ["fanart", "color", "ilustración"],
+    "cover": "assets/img/placeholder-6.png"
+  }
+]
